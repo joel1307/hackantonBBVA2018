@@ -92,7 +92,7 @@ public class menuprincipal extends javax.swing.JFrame {
 
         jButton9.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jButton9.setForeground(new java.awt.Color(0, 0, 153));
-        jButton9.setText("Pagar srvicios");
+        jButton9.setText("Pagar servicios");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);

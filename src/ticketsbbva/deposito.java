@@ -578,8 +578,10 @@ public class deposito extends javax.swing.JFrame {
     }//GEN-LAST:event_Txf_numActionPerformed
 
     private void btn_continuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_continuarActionPerformed
-        
-        
+
+        opcionesticket ppb = new opcionesticket();
+        ppb.setVisible(true);
+        this.dispose();
         
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_continuarActionPerformed
