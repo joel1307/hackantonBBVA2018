@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="158" pageHeight="396" columnWidth="136" leftMargin="0" rightMargin="22" topMargin="22" bottomMargin="22" uuid="aad60e74-0dbc-4baa-b472-95c9f817d22e">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="110"/>
+	<parameter name="ide" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="venta_id" class="java.math.BigInteger"/>
+	<field name="venta_neto" class="java.math.BigDecimal"/>
+	<field name="venta_recibido" class="java.math.BigDecimal"/>
+	<field name="venta_cambio" class="java.math.BigDecimal"/>
+	<field name="venta_detalle_descripcion" class="java.lang.String"/>
+	<field name="venta_detalle_cantidad" class="java.lang.Long"/>
+	<field name="venta_detalle_precio" class="java.math.BigDecimal"/>
+	<field name="venta_detalle_descuento" class="java.math.BigDecimal"/>
+	<field name="venta_detalle_subtotal" class="java.math.BigDecimal"/>
+	<field name="venta_detalle_iva" class="java.math.BigDecimal"/>
+	<field name="usuario_nombre" class="java.lang.String"/>
+	<field name="metod_pago_descripcion" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="26" y="1" width="99" height="22" uuid="b415a7c8-a7fc-498b-82ec-c733b2de5efc"/>
+				<textElement textAlignment="Center">
+					<font size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[** BBVA BANCOMER, S.A. **
+RFC830831LJ2 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="23" width="29" height="12" uuid="48560f92-20fb-47bb-a350-21420dfbf3fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[CAJERO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="23" width="25" height="12" uuid="7ad62163-480a-4c79-9aa2-52a6fa05df20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="35" width="25" height="12" uuid="ff96fad2-535d-4f9a-a4c4-913e12e5cd0d"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[  /  /]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="35" width="19" height="12" uuid="e6dd93db-6368-401c-ba73-8a00dc53dc72"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="35" width="29" height="12" uuid="67b12f40-9ce8-4c59-94ec-475d52e88776"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ - - - - - - - - - - - - - - - -]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="24" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="12" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="0" width="20" height="12" uuid="7bd71f0f-145d-4956-bb09-4d37a5393fe5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Cant.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="0" width="38" height="12" uuid="9b57734a-a42d-4e28-a71a-fe12ef353d90"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[subTotal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="115" y="0" width="21" height="12" uuid="bd243a21-af38-4b26-bb9e-b45ca76d654b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[iva]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="0" width="23" height="12" uuid="92fbc6a6-67e4-4488-b012-7ee17bccc6d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Desc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="0" width="32" height="12" uuid="75b7804f-0385-4185-bba8-619683642364"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Precio]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch"/>
+	</detail>
+	<summary>
+		<band height="182" splitType="Stretch">
+			<staticText>
+				<reportElement x="8" y="48" width="46" height="12" uuid="7e17d8f3-5f67-47f3-a6a5-81dee48f6f55"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="60" width="46" height="12" uuid="f120d8a0-83b6-4e4a-ac3e-9032410eba9d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Importe:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="72" width="46" height="12" uuid="e700370f-0d3e-4cb2-86b4-7c2eb388584d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Cambio:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="12" width="68" height="12" uuid="fa097c3e-f4d6-471e-a8e3-4afdf63ca4dd"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[CLIENTE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="131" width="128" height="51" uuid="825bd675-1c64-4f0c-8716-36d81efbb431"/>
+				<textElement textAlignment="Center">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[CUALQUIER ACLARACION ACUDE A TU SUCURSALO LLAMA A LINEA BANCOMER AL 01 800 226 2663]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="0" width="70" height="12" uuid="9afe42ea-acc2-40e2-9b91-961559a6cb3b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ - - - - - - - - - - - - - - - -]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="84" width="70" height="12" uuid="9232f7bb-4263-4cbc-89c0-a636c26dcd3d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ - - - - - - - - - - - - - - - -]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="119" width="70" height="12" uuid="33c9d637-a9ef-48da-9727-f02990823685"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ - - - - - - - - - - - - - - - -]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="96" width="46" height="12" uuid="adc3a564-c23c-44fd-95ee-d1f2c87ba2bd"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Le atendio :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="36" width="46" height="12" uuid="e3573664-8a17-479e-81cb-be83f9f4318a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Iva:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="24" width="46" height="12" uuid="9c21570c-0e6f-46a7-a206-1be88dddbf22"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[SubTotal:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
