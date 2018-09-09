@@ -171,7 +171,7 @@ public class Main extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
-        Pantalla1 ppb = new Pantalla1();
+        menuprincipal ppb = new menuprincipal();
         ppb.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -179,7 +179,7 @@ public class Main extends javax.swing.JFrame {
     private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
         // TODO add your handling code here:
         
-        Pantalla1 ppb = new Pantalla1();
+        menuprincipal ppb = new menuprincipal();
         ppb.setVisible(true);
         this.dispose();  
     }//GEN-LAST:event_jPanel1MouseClicked
